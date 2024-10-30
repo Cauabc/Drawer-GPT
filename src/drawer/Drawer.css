@@ -1,0 +1,21 @@
+.drawer {
+  height: 100vh;
+  width: 0;
+  background-color: rgb(23, 23, 23);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+.drawer-opened {
+  width: 15em !important;
+}
+
+.drawer-title {
+  width: 15em;
+  color: #fff;
+}
+
+.drawer-button-close {
+  margin: 1em;
+}

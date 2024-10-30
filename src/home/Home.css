@@ -1,0 +1,31 @@
+.chatgpt-title-button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: rgb(180, 180, 180);
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.4em;
+  border-radius: 8px;
+  font-size: 1.3em;
+}
+
+.title {
+  margin: 1em;
+  display: flex;
+  align-items: start;
+}
+
+.button-open-drawer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatgpt-title-button:hover {
+  background-color: rgb(47, 47, 47);
+}
+
+.home {
+  display: flex;
+}
