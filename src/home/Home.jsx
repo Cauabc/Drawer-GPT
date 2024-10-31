@@ -5,25 +5,13 @@ import { FiSidebar } from "react-icons/fi";
 
 function Home() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-  const [drawerClasses, setDrawerClasses] = useState(["drawer"]);
-
-  function openDrawer() {
-    setIsNavbarOpen(true);
-
-    setDrawerClasses(["drawer", "drawer-opened"]);
-  }
 
   return (
     <div className="home">
-      <Drawer
-        classes={drawerClasses}
-        setIsOpen={setIsNavbarOpen}
-        setDrawerClasses={setDrawerClasses}
-        isOpen={isNavbarOpen}
-      />
+      <Drawer setIsOpen={setIsNavbarOpen} isOpen={isNavbarOpen} />
       <div className="title">
         <button
-          onClick={openDrawer}
+          onClick={() => setIsNavbarOpen(true)}
           style={{ display: isNavbarOpen ? "none" : "block" }}
           className="button-open-drawer chatgpt-title-button"
         >

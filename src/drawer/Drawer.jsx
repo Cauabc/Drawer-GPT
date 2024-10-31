@@ -1,17 +1,12 @@
 import { FiSidebar } from "react-icons/fi";
 import "./Drawer.css";
 
-function Drawer({ classes, isOpen, setIsOpen, setDrawerClasses }) {
-  function closeDrawer() {
-    setIsOpen(false);
-    setDrawerClasses(["drawer"]);
-  }
-
+function Drawer({ isOpen, setIsOpen }) {
   return (
-    <div className={classes.map((classe) => classe).join(" ")}>
+    <div className={`drawer ${isOpen && `drawer-opened`}`}>
       {isOpen && (
         <button
-          onClick={closeDrawer}
+          onClick={() => setIsOpen(false)}
           className="button-open-drawer chatgpt-title-button drawer-button-close"
         >
           <FiSidebar />
