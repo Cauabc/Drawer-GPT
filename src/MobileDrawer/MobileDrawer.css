@@ -1,0 +1,12 @@
+.mobile-drawer {
+  position: absolute;
+  height: 100vh;
+  width: 19em;
+  transform: translateX(-100%);
+  background-color: rgb(23, 23, 23);
+  transition: all 0.15s;
+}
+
+.mobile-drawer-opened {
+  transform: translateX(0);
+}
